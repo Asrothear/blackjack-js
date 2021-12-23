@@ -36,3 +36,7 @@ New Look in v2.0
 -----
 ![https://asrothear.de/uploads/Uploads/Blackjack-jsV2.jpg](https://asrothear.de/uploads/Uploads/Blackjack-jsV2.jpg)
 
+
+![https://asrothear.de/uploads/Uploads/Blackjack-jsV2_2.jpg](https://asrothear.de/uploads/Uploads/Blackjack-jsV2_2.jpg)
+
+
