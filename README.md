@@ -30,6 +30,9 @@ Copyright (C) 2017 Stayko Chalakov
 ### Blackjack-JS version 2.0+
 Copyright (C) 2021 Lord Asrothear
 
+Modifed and extended to have a betting system.
+To be used inside of a Game-Server.
+
 for Detailed License see https://github.com/Asrothear/blackjack-js/blob/master/LICENSE
 
 New Look in v2.0
@@ -39,4 +42,4 @@ New Look in v2.0
 
 ![https://asrothear.de/uploads/Uploads/Blackjack-jsV2_2.jpg](https://asrothear.de/uploads/Uploads/Blackjack-jsV2_2.jpg)
 
-
+To Modify the Credits use the command setCash(1500) in the Web Develober Console (strg+shit+i)
