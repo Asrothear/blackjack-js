@@ -14,7 +14,7 @@ About
 ------
 This is a blackjack program built using HTML5, JavaScript and CSS.  There's still a lot to be desired, so please fork and make it better!
 
-### Original Version
+### Original Blackjack-JS version 1.1
 Copyright (C) 2017 Stayko Chalakov
 
     	This program is free software: you can redistribute it and/or modify
@@ -27,6 +27,6 @@ Copyright (C) 2017 Stayko Chalakov
     	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     	GNU General Public License for more details. http://www.gnu.org/licenses/
 
-### Asrothear Version
+### Blackjack-JS version 2.0+
 Copyright (C) 2021 Lord Asrothear
 for License see https://github.com/Asrothear/blackjack-js/blob/master/LICENSE
