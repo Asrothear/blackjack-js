@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>A simple blackjack game in JavaScript</title>
+    <title>BlackJackt</title>
     <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -10,7 +10,7 @@
   <body>
 
     <div id="table">
-      <div id="dealer-score" class="score">Dealer score: <span>0</span></div>
+      <div id="dealer-score" class="score">Dealer Blatt: <span>0</span></div>
       <div id="deck">
         <div class="back"></div>
       </div>
@@ -19,18 +19,52 @@
 
       <div class="border-line"></div>
 
-      <div id="player-score" class="score">Your score: <span>0</span></div>
+      <div id="player-score" class="score">Dein Blatt: <span>0</span></div>
       <div class="container" id="player">
       </div>
     </div>
 
     <div id="panel">
-      <div id="status">Press Deal to start game</div>
+      <div id="status">Zum Starten Wette platzieren</div>
 
-      <button id="deal" class="blue" type="button">DEAL</button>
+      <button id="deal" class="blue" type="button" disabled>DEAL</button>
       <button id="hit" class="green" type="button" disabled>HIT</button>
       <button id="stand" class="red" type="button" disabled>STAND</button>
 
+      <div id="bet">Wette
+        <div id="betspace">Einstatz</div>
+        <button id="pb1" class="green" type="button" >Add 1</button>
+        <button id="rb1" class="red" type="button" >Remove 1</button>
+
+        <button id="pb10" class="green" type="button" >Add 10</button>
+        <button id="rb10" class="red" type="button" >Remove 10</button>
+
+        <button id="pb100" class="green" type="button" >Add 100</button>
+        <button id="rb100" class="red" type="button" >Remove 100</button>
+
+        <div id="betspacer">
+        <button id="pb2" class="green" type="button" >Add 2</button>
+        <button id="rb2" class="red" type="button" >Remove 2</button>
+
+        <button id="pb20" class="green" type="button" >Add 20</button>
+        <button id="rb20" class="red" type="button" >Remove 20</button>
+
+        <button id="pb200" class="green" type="button" >Add 200</button>
+        <button id="rb200" class="red" type="button" >Remove 200</button>
+
+        <div id="betspacer"></div>
+        <button id="pb5" class="green" type="button" >Add 5</button>
+        <button id="rb5" class="red" type="button" >Remove 5</button>
+
+        <button id="pb50" class="green" type="button" >Add 50</button>
+        <button id="rb50" class="red" type="button" >Remove 50</button>
+
+        <button id="pb500" class="green" type="button" >Add 500</button>
+        <button id="rb500" class="red" type="button" >Remove 500</button>
+
+        <div id="closer" onclick="BlackjackJS.exit()">Verlassen</div>
+
+      </div>
     </div>
 
     <script type="text/javascript" src="blackjack.js"></script>
