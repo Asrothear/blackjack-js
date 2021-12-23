@@ -13,6 +13,10 @@
 */
 
 //namespacing
+function setCash(v){
+	console.log("set credits: "+v);
+	BlackjackJS.icrd(v);
+}
 var BlackjackJS = (function() {
 	/**************
 		Card class
@@ -528,4 +532,4 @@ var BlackjackJS = (function() {
 		icrd: Game.icrd.bind(Game)
 	}
 })()
-/*
+
