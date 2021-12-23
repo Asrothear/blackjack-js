@@ -1,5 +1,4 @@
 ### Blackjack-JS version 2.0+
-=========================
 
 Copyright (C) 2021 Lord Asrothear
 
