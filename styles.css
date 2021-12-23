@@ -1,31 +1,22 @@
-/*
-  BlackjackJS CSS
-
-  @author Stayko Chalakov
-	@version 1.0
-	@date 29.06.2017
-*/
-/*
-	@author Lord Asrothear
-	@version 2.0
-	@date 23.12.2021
-*/
 html {
   height: 100%;
 }
 
 body {
-  background: rgba(30,66,0,1);
-  background: -moz-linear-gradient(top, rgba(30,66,0,1) 0%, rgba(35,161,16,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(30,66,0,1)), color-stop(100%, rgba(35,161,16,1)));
-  background: -webkit-linear-gradient(top, rgba(30,66,0,1) 0%, rgba(35,161,16,1) 100%);
-  background: -o-linear-gradient(top, rgba(30,66,0,1) 0%, rgba(35,161,16,1) 100%);
-  background: -ms-linear-gradient(top, rgba(30,66,0,1) 0%, rgba(35,161,16,1) 100%);
-  background: linear-gradient(to bottom, rgba(30,66,0,1) 0%, rgba(35,161,16,1) 100%);
+  
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+#background{
+  background: linear-gradient(to bottom, rgba(30, 66, 0, 0.5) 0%, rgba(35,161,16,0.5) 100%);  
+  background-size: 50%;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4200', endColorstr='#23a110', GradientType=0 );
   min-height: 100%;
+  margin-top: 5%;
 }
-
 #table {
   position: relative;
   padding-top: 20px;
@@ -38,19 +29,16 @@ body {
 }
 
 .container {
-  left:35.1%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   height: 214px;
-  position: relative;
   width:100%;
 }
 
 #deck{
   top:55px;
-  left:30%;
   z-index: 10;
   position: absolute;
   width: 120px;
@@ -146,11 +134,13 @@ body {
 
 /* footer */
 #panel {
-  text-align: center;
-  background-color: #40434E;
+  margin: auto;
+  text-align: center;  
+  position: relative;
+  /*background-color: #40434E;
   border-top: 1px solid #070707;
-  position: absolute;
-  width: 100%;
+  /*width: 100%; */
+  /*left: 25%;*/
   padding-top: 10px;
 }
 
@@ -188,16 +178,18 @@ body {
   color: #55acee;
   position: relative;
   font-size: 20px;
+  cursor: pointer;
 }
 
 /* buttons */
 button {
+  cursor: pointer;
   border:none;
   border-radius: 5px;
   padding: 15px 25px;
   font-size: 20px;
   text-decoration: none;
-  margin: 20px;
+  margin: 15px;
   color: #F6F7EB;
   position: relative;
   display: inline-block;

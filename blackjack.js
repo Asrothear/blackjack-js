@@ -1,23 +1,16 @@
-/*
-	Blackjack 21
-	A simple game developed using Javascript, HTML and CSS
-
-	@author Stayko Chalakov
-	@version 1.0
-	@date 29.06.2017
-*/
-/*
-	@author Lord Asrothear
-	@version 2.0
-	@date 23.12.2021
-*/
-
 //namespacing
-function setCash(v){
+function blackjsetCash (v){
 	console.log("set credits: "+v);
-	BlackjackJS.icrd(v);
+			BlackjackJS.icrd(v);
 }
+try{
+alt.on('blackj:setCash', v => {
+			console.log("set credits: "+v);
+			BlackjackJS.icrd(v);
+})
+}catch(e){}
 var BlackjackJS = (function() {
+
 	/**************
 		Card class
 	***************/
@@ -401,6 +394,9 @@ var BlackjackJS = (function() {
 
 			this.double = false;
 			console.log("getting ready");
+			try{
+			alt.emit('blackj:Ready')
+			}catch(e){}
 		}
 
 		/*
@@ -455,9 +451,15 @@ var BlackjackJS = (function() {
 					}
 					this.unlck();
 				}
+				try{
+					alt.emit('blackj:win', this.cred)
+				}catch(e){}
 			}else{
 				this.setMessage("Verloren");
 				this.bet = 0;
+				try{					
+					alt.emit('blackj:lose', this.cred)
+				}catch(e){}
 			};
 			this.bet = 0;
 			this.setBet();
@@ -513,6 +515,9 @@ var BlackjackJS = (function() {
 
 		this.exit = function() {
 				console.log('exit')
+				try{					
+					alt.emit('blackj:exitblj')
+				}catch(e){}
 		}
 
 		this.icrd = function(val){
@@ -532,4 +537,8 @@ var BlackjackJS = (function() {
 		icrd: Game.icrd.bind(Game)
 	}
 })()
-
+/*
+alt.on('blackj:setCash', v => {
+			console.log("set credits: "+v);
+			BlackjackJS.icrd(v);
+})*/
