@@ -29,4 +29,4 @@ Copyright (C) 2017 Stayko Chalakov
 
 ### Asrothear Version
 Copyright (C) 2021 Lord Asrothear
-for License see ####[LICENSE](https://github.com/Asrothear/blackjack-js/blob/master/LICENSE "")
+for License see https://github.com/Asrothear/blackjack-js/blob/master/LICENSE
