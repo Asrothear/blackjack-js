@@ -29,4 +29,5 @@ Copyright (C) 2017 Stayko Chalakov
 
 ### Blackjack-JS version 2.0+
 Copyright (C) 2021 Lord Asrothear
+
 for License see https://github.com/Asrothear/blackjack-js/blob/master/LICENSE
